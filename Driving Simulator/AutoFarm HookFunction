@@ -1,0 +1,10 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local CarInput = require(ReplicatedStorage.src.pcar.CarInput)
+local CarPlacer = require(ReplicatedStorage.src.pcar.CarPlacer)
+local CarTracker = require(ReplicatedStorage.src.pcar.CarTracker)
+local ClientCarState = require(ReplicatedStorage.src.pcar.ClientCarState)
+
+hookfunction(CarInput.GetNitro, function()
+  return true
+end)
