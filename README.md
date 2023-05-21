@@ -17,3 +17,4 @@ Jens Hub is compatible with the following:
 - Scriptware Windows
 - Krnl
 - Fluxus
+- Electron
