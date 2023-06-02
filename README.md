@@ -1,5 +1,5 @@
 # Jens Hub
-Hello! This is the official repository for Jens Hub. The official discord server is [here](https://discord.gg/JBue29mpqQ).
+Hello! This is the official repository for Jens Hub. The official discord server is [here](https://discord.gg/YqDW52v7xF).
 
 ## Loadstring
 
