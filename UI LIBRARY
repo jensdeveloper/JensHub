@@ -17,7 +17,7 @@ Solaris.Parent = game.CoreGui
 Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local NotificationHolder = Instance.new("ScreenGui")
-NotificationHolder.Name = "notiHolder"
+NotificationHolder.Name = generateRandomName(nameLength)
 NotificationHolder.Parent = game.CoreGui
 NotificationHolder.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
