@@ -972,7 +972,6 @@ function Library:notification(options)
 		TextColor3 = Color3.fromRGB(255, 255, 255),
 		TextXAlignment = Enum.TextXAlignment.Left,
 		TextYAlignment = Enum.TextYAlignment.Top,
-		TextTransparency = 1
 	})
 
 	text:tween({Size = UDim2.new(1, 0, 0, text.TextBounds.Y)})
